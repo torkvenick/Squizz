@@ -1,0 +1,19 @@
+.card {
+  width: 400px;
+  min-height: 600px;
+  margin: 10px auto;
+}
+
+.flx-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.p5 {
+  padding: 5px;
+}
