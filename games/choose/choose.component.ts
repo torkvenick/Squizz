@@ -16,10 +16,10 @@ export class ChooseComponent {
   }
   breed: Breed;
   getDogImg() {
-    return this.breed.imgs[0];
+    return this.breed.imgs[1];
   }
   constructor() {
-    this.breed = this.breeds[0];
+    this.breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
   }
   chooseDog(dog: string, event: PointerEvent & { target: HTMLElement }) {
     const rightDog = this.breed.dogs.indexOf(this.breed.dog, 0);
@@ -27,5 +27,9 @@ export class ChooseComponent {
     if (dog !== this.breed.dog) {
       event.target.style.backgroundColor = "red";
     }
+
+    setTimeout(() => {
+      this.breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
+    }, 2000);
   }
 }
