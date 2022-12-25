@@ -1,13 +1,23 @@
 .card {
-  width: 400px;
-  min-height: 600px;
-  margin: 10px auto;
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
 }
 
 .flx-col-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.img-container {
+  height: 65% !important;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.img {
+  height: 100%;
 }
 
 .h200 {

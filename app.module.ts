@@ -1,3 +1,4 @@
+import { MainService } from "./shared/services/main.service";
 import { TypeComponent } from "./games/type/type.component";
 import { ChooseComponent } from "./games/choose/choose.component";
 import { FormsModule } from "@angular/forms";
@@ -30,7 +31,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     RouterTestingModule,
   ],
-  providers: [],
+  providers: [MainService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

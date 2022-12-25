@@ -1,3 +1,4 @@
+import { MainService } from "./../../shared/services/main.service";
 import { Breed, Breeds } from "./../../shared/services/breeds";
 import { Component, ViewChild } from "@angular/core";
 
@@ -8,19 +9,17 @@ import { Component, ViewChild } from "@angular/core";
 })
 export class ChooseComponent {
   @ViewChild("buttons", { static: true }) buttons;
-  breeds = Breeds;
-  get randomDogName() {
-    const randomElement =
-      this.breeds[Math.floor(Math.random() * this.breeds.length)].dog;
-    return randomElement;
-  }
+  breeds = this.mainService.breeds;
   breed: Breed;
   getDogImg() {
     return this.breed.imgs[1];
   }
-  constructor() {
+
+  constructor(private mainService: MainService) {
     this.breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
+    console.log(this.breeds);
   }
+
   chooseDog(dog: string, event: PointerEvent & { target: HTMLElement }) {
     const rightDog = this.breed.dogs.indexOf(this.breed.dog, 0);
     this.buttons.el.children[rightDog].style.backgroundColor = "green";
