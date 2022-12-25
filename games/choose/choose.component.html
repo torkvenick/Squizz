@@ -3,7 +3,7 @@
     <div class="img-container">
       <ion-img [alt]="breed.dog" class="img" [src]="getDogImg()"></ion-img>
     </div>
-    <ion-card-content>
+    <ion-card-content class="prl5">
       <ion-buttons class="flx-col-between" #buttons>
         <ng-container *ngFor="let dog of breed.dogs">
           <ion-button fill="outline" style="margin-bottom: 10px; width: 100%;" (click)="chooseDog(dog, $event)">

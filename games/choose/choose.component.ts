@@ -16,19 +16,28 @@ export class ChooseComponent {
   }
 
   constructor(private mainService: MainService) {
-    this.breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
-    console.log(this.breeds);
+    this.breed = this.mainService.randomizer(this.breeds);
   }
 
   chooseDog(dog: string, event: PointerEvent & { target: HTMLElement }) {
-    const rightDog = this.breed.dogs.indexOf(this.breed.dog, 0);
-    this.buttons.el.children[rightDog].style.backgroundColor = "green";
+    this.breed.isChosen = true;
+    const chosenBreed = this.breeds.find((breed) => breed.isChosen);
+    this.buttonStyleToggle(true);
     if (dog !== this.breed.dog) {
       event.target.style.backgroundColor = "red";
     }
 
     setTimeout(() => {
-      this.breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
+      this.breed = this.mainService.randomizer(this.breeds);
+      this.breeds.splice(this.breeds.indexOf(chosenBreed), 1);
+      this.buttonStyleToggle(false);
     }, 2000);
+  }
+
+  buttonStyleToggle(chosen: boolean) {
+    const rightDog = this.breed.dogs.indexOf(this.breed.dog, 0);
+    return (this.buttons.el.children[rightDog].style.backgroundColor = chosen
+      ? "green"
+      : "transparent");
   }
 }

@@ -2,6 +2,7 @@ export interface Breed {
   dog: string;
   imgs: string[];
   dogs?: string[];
+  isChosen?: boolean;
 }
 
 export enum DogName {
@@ -35,7 +36,6 @@ export const Breeds: Breed[] = [
       "https://www2.zoolyx.be/wp-content/uploads/2018/11/lhasa_apso-scaled.jpg",
       "https://www.purina.nl/sites/default/files/styles/ttt_image_original/public/2021-02/BREED%20Hero%20Desktop_0074_lhasa_apso.webp?itok=fK9lY6js",
     ],
-    dogs: [],
   },
   {
     dog: DogName.cavalierKingCharlesSpaniel,
@@ -44,7 +44,6 @@ export const Breeds: Breed[] = [
       "https://s3.eu-central-1.amazonaws.com/hund-gewicht/dog/8901252528/613f5a23e535b874000522.jpg",
       "https://img.pixers.pics/pho_wat(s3:700/FO/23/42/06/50/700_FO23420650_f7f0f777b546090e6e7e11d97fe6ca63.jpg,611,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,391,650,jpg)/fotobehang-cavalier-king-charles-spaniel-5-jaar-oud.jpg.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.keeshond,
@@ -53,7 +52,6 @@ export const Breeds: Breed[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Keeshond_Majic_standing_cropped.jpg/800px-Keeshond_Majic_standing_cropped.jpg",
       "https://assets.bazoeki.com/eyJidWNrZXQiOiJhc3NldHMuYmF6b2VraS5jb20iLCJrZXkiOiJhc3NldHMvaW1nL2hlYWRlci1kb2ctaW1hZ2VzL2tlZXNob25kLnBuZyIsImVkaXRzIjp7InBuZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NTQwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0=",
     ],
-    dogs: [],
   },
   {
     dog: DogName.keesduitseStaandeLanghaarHond,
@@ -62,7 +60,6 @@ export const Breeds: Breed[] = [
       "https://static.wixstatic.com/media/e1c7cd_206c94f6ad8940649890a41f2a417d38~mv2_d_1426_1920_s_2.jpg/v1/fill/w_550,h_748,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/75264775_721204231692576_120653381183628.jpg",
       "https://www.houdenvanhonden.nl/globalassets/rassen/fci-7/duitse-staande-langhaar/glp-ou-0099.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.labradorRetriever,
@@ -71,7 +68,6 @@ export const Breeds: Breed[] = [
       "https://www.omlet.nl/images/cache/438/512/Dog-Labrador_Retriever-A_healthy_adult_Labrador_sitting%2C_waiting_for_some_attention_from_it%27s_owner.jpg",
       "https://t2.ea.ltmcdn.com/en/razas/0/0/1/labrador-retriever_100_0_600.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.leeuwhondje,
@@ -80,7 +76,6 @@ export const Breeds: Breed[] = [
       "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Lowchen%20%28Little%20Lion%20Dog%291.jpg?itok=Y9x8mZ2Z",
       "https://gekop.com/wp-content/uploads/2014/02/1295-Honden-shutterstock-Leeuwhondje.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.kerryBlueTerrier,
@@ -89,7 +84,6 @@ export const Breeds: Breed[] = [
       "https://www.omlet.nl/images/cache/371/512/Dog-Kerry_Blue_Terrier-A_lovely_Kerry_Blue_Terrier_sitting_neatly%2C_awaiting_some_attention.jpg",
       "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0080_kerry_blue_terrier.jpg?itok=jGBtYWTz",
     ],
-    dogs: [],
   },
   {
     dog: DogName.ierseSetter,
@@ -98,7 +92,6 @@ export const Breeds: Breed[] = [
       "https://omy.dog/photo/F7E1CAD7-D484-4265-9E24-3015B912F3F6/original",
       "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0069_irish_setter.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.akitaInu,
@@ -107,7 +100,6 @@ export const Breeds: Breed[] = [
       "https://assets.felicanis.be/wp-content/uploads/akita-inu-683x1024.jpg",
       "https://i.pinimg.com/originals/0d/66/ee/0d66ee6da8aa47159243b2acac42fb09.jpg",
     ],
-    dogs: [],
   },
   {
     dog: DogName.ijslandseHond,

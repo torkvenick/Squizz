@@ -2,6 +2,7 @@
   width: 90vw;
   height: 80vh;
   margin: 0 auto;
+  overflow-y: hidden;
 }
 
 .flx-col-between {
@@ -26,4 +27,9 @@
 
 .p5 {
   padding: 5px;
+}
+
+.prl5 {
+  padding-left: 5px;
+  padding-right: 5px;
 }
