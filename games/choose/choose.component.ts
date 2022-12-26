@@ -28,9 +28,9 @@ export class ChooseComponent {
     }
 
     setTimeout(() => {
-      this.breed = this.mainService.randomizer(this.breeds);
-      this.breeds.splice(this.breeds.indexOf(chosenBreed), 1);
       this.buttonStyleToggle(false);
+      this.breeds.splice(this.breeds.indexOf(chosenBreed), 1);
+      this.breed = this.mainService.randomizer(this.breeds);
     }, 2000);
   }
 

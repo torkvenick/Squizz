@@ -2,6 +2,7 @@ import { Breeds } from "./breeds";
 
 export class MainService {
   breeds = Breeds;
+  breedNames: string[] = this.breeds.map((breed) => breed.dog);
   constructor() {
     this.configureDogsArray();
   }
@@ -11,15 +12,9 @@ export class MainService {
   }
 
   configureDogsArray() {
-    const dogsNames: string[] = this.breeds.map((breed) => {
-      return breed.dog;
-    });
     this.breeds.forEach((breed) => {
-      const randomDog1 = this.randomizer(dogsNames);
-      const randomDog2 = this.randomizer(dogsNames);
-      const randomDog3 = this.randomizer(dogsNames);
       const rightDog = breed.dog;
-      const options: string[] = [rightDog, randomDog1, randomDog2, randomDog3];
+      let options = this.jogar(rightDog);
       breed.dogs = options.sort((a, b) => (Math.random() < 0.5 ? -1 : 1));
       breed.isChosen = false;
     });
@@ -28,5 +23,23 @@ export class MainService {
   getNewBreed() {
     const breed = this.breeds[Math.floor(Math.random() * this.breeds.length)];
     return breed;
+  }
+
+  jogar(rightDog: string): Array<string> {
+    let arr = [rightDog];
+    if (arr.length !== 0) {
+      arr = [rightDog];
+    }
+    while (arr.length < 4) {
+      let randomName = this.randomizer(this.breedNames);
+      if (!this.wasAlreadyAdded(randomName, arr)) {
+        arr.push(randomName);
+      }
+    }
+    return arr;
+  }
+
+  private wasAlreadyAdded(randomNumber: string, arr: string[]): boolean {
+    return arr.indexOf(randomNumber) !== -1;
   }
 }
