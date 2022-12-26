@@ -11,9 +11,14 @@ export class ChooseComponent {
   @ViewChild("buttons", { static: true }) buttons;
   breeds = this.mainService.breeds;
   breed: Breed;
-  getDogImg() {
-    return this.breed.imgs[1];
-  }
+  // getDogImg() {
+  //   return this.breed.imgs[1];
+  // }
+
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400,
+  };
 
   constructor(private mainService: MainService) {
     this.breed = this.mainService.randomizer(this.breeds);
