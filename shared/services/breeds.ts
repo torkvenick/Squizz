@@ -26,6 +26,28 @@ export enum DogName {
   landseer = "landseer",
   lagottoRomagnolo = "lagotto romagnolo",
   ierseWaterspaniel = "ierse waterspaniel",
+  chihuahua = "chihuahua",
+  amerikaanseCockerSpaniel = "amerikaanse cocker spaniel",
+  borderCollie = "border collie",
+  griffonKorthals = "griffon korthals",
+  shibaInu = "shiba inu",
+  chesapeakBayRetriever = "chesapeak bay retriever",
+  novaScotiaDuckTollingRetriever = "nova scotia duck tolling retriever",
+  australianCattleDog = "australian cattle dog",
+  anatolischeHerdershond = "anatolische herdershond",
+  americanAkita = "american akita",
+  foxterrierDraadhaar = "foxterrier draadhaar",
+  bosanskiOstrodlakiGonicBarak = "bosanski ostrodlaki gonic barak",
+  westHighlandWhiteTerrier = "west highland white terrier",
+  epagneulBreton = "epagneul breton",
+  shetlandSheepdog = "shetland sheepdog",
+  finseSpits = "finse spits",
+  bolognezer = "bolognezer",
+  russischeTerrier = "russische terrier",
+  bouvierDesArdenne = "bouvier des ardenne",
+  epagneulNainContinentalPapillon = "epagneul nain continental papillon",
+  ruwharigeTeckel = "ruwharige teckel",
+  imaalTerrierOfIerseGlen = "imaal terrier of ierse glen",
 }
 
 export const Breeds: Breed[] = [
@@ -187,6 +209,182 @@ export const Breeds: Breed[] = [
       "https://media-be.chewy.com/wp-content/uploads/2021/06/25115515/IrishWaterSpaniel-FeaturedImage.jpg",
       "https://breed-assets.wisdompanel.com/dog/irish-water-spaniel/Irish_Water_Spaniel_Color_Small_File.png",
       "https://www.purina.nl/sites/default/files/breed_library/irish_water_spaniel.jpg",
+    ],
+  },
+  {
+    dog: DogName.chihuahua,
+    imgs: [
+      "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Chihuahua-Smooth-Coat.jpg?itok=J40w8Swm",
+      "https://www.petbarn.com.au/petspot/app/uploads/2015/01/30.-Chihuahua.jpg",
+      "https://www.licg.nl/media/1275/chihuahua740x433.jpg",
+    ],
+  },
+  {
+    dog: DogName.amerikaanseCockerSpaniel,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0122_spaniel_american_cocker.jpg",
+      "https://gekop.com/wp-content/uploads/2013/10/054-Honden-shutterstock-am-cocker-spaniel.jpg",
+      "https://www.houdenvanhonden.nl/globalassets/rassen/fci-8/amerikaanse-cocker-spaniel/acs-ou-0009.jpg",
+    ],
+  },
+  {
+    dog: DogName.borderCollie,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0018_border_collie.jpg",
+      "https://www.akc.org/wp-content/uploads/2017/11/Border-Collie-On-White-01.jpg",
+      "https://cdn.britannica.com/25/234625-050-6070814C/Border-Collie-dog.jpg",
+    ],
+  },
+  {
+    dog: DogName.griffonKorthals,
+    imgs: [
+      "https://www.houdenvanhonden.nl/globalassets/rassen/fci-7/griffon-korthals/grk-ou-0014.jpg",
+      "https://cdn.webshopapp.com/shops/324873/files/382848618/griffon-korthals.jpg",
+      "http://in05.hostcontrol.com/resources/b2c34fd5e7b7a2/c884e60a62.JPEG",
+    ],
+  },
+  {
+    dog: DogName.shibaInu,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0084_japanese_shiba_inu.jpg?itok=_ryhqMa9",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Taka_Shiba.jpg/1200px-Taka_Shiba.jpg",
+      "https://image.petmd.com/files/styles/863x625/public/2022-10/Shiba-Inu.jpeg",
+    ],
+  },
+  {
+    dog: DogName.chesapeakBayRetriever,
+    imgs: [
+      "https://www.purina.com.au/-/media/project/purina/main/breeds/dog/dog_chesapeake-bay-retriever_desktop.jpg?h=475&la=en&w=825&hash=E901FC0696A374EEEB4DA413BFD4B776",
+      "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F01%2F11%2Fchesapeake-bay-retriever-sitting-in-the-sun-661221626-2000.jpg",
+      "https://www.thekennelclub.org.uk/media/1299/retriever-chesapeake-bay-standing.jpg?mode=pad&width=1000&rnd=132140430600000000",
+    ],
+  },
+  {
+    dog: DogName.novaScotiaDuckTollingRetriever,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0107_nova_scotia_ducke_toller.jpg",
+      "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/animal/breed/dog/adult/5f77466d0abdb973826258.jpg",
+      "https://www.nativebreed.org/wp-content/uploads/2020/07/Nova-Scotia-Duck-Tolling-Retriever-1024x682.jpg",
+    ],
+  },
+  {
+    dog: DogName.australianCattleDog,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0004_australian_cattle_dog_0.jpg",
+      "https://media-be.chewy.com/wp-content/uploads/2021/06/16153832/AustralianCattleDog-FeaturedImage-1024x615.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/ACD-blue-spud.jpg/640px-ACD-blue-spud.jpg",
+    ],
+  },
+  {
+    dog: DogName.anatolischeHerdershond,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Anatolian%20Shepherd%20Dog1.jpg?itok=F7Io4Pba",
+      "https://fastly.jwwb.nl/public/p/c/o/temp-tafkmrgopywxnvnxqbkv/Anatolische-Herdershond.jpg",
+      "https://www.hondenrassen.nl/public/img/content/pebbles_13052008-20110922114500.jpg",
+    ],
+  },
+  {
+    dog: DogName.americanAkita,
+    imgs: [
+      "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/06154034/Akita-standing-outdoors-in-the-summer.jpg",
+      "https://image.jimcdn.com/app/cms/image/transf/none/path/s53b36d06bb1bc5e5/image/iea74cdb9a08eab13/version/1620740965/image.jpg",
+      "https://www.thekennelclub.org.uk/media/1670/akita-standing.jpg?mode=pad&width=1000&rnd=132143812230000000",
+    ],
+  },
+  {
+    dog: DogName.foxterrierDraadhaar,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0050_fox_terrier_wire.jpg",
+      "https://omy.dog/photo/E90F7B59-7D7B-4213-A037-852C7EEA65C5/thumbnail",
+      "https://www.houdenvanhonden.nl/globalassets/rassen/fci-3/foxterrier-draadhaar/fox-ou-0083.jpg",
+    ],
+  },
+  {
+    dog: DogName.bosanskiOstrodlakiGonicBarak,
+    imgs: [
+      "https://jelenadogshows.com/sr/wp-content/uploads/2021/05/BOSANSKI-OSTRODLAKI-GONIC-BARAK.jpg",
+      "https://bosnjani.com/wp-content/uploads/2020/11/9957763.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BIR_Grupp_6-_BOSANSKI_OSTRODLAKI_GONIC-BARAK%2C_Sandy_%2823866392689%29.jpg/800px-BIR_Grupp_6-_BOSANSKI_OSTRODLAKI_GONIC-BARAK%2C_Sandy_%2823866392689%29.jpg",
+    ],
+  },
+  {
+    dog: DogName.westHighlandWhiteTerrier,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0139_west_highland_white_terrier.jpg",
+      "https://hondxl.nl/storage/5163/conversions/West_Highland_White_Terrier_Krakow-thumb_wide.jpg",
+      "https://s3.eu-central-1.amazonaws.com/tipaw-pictures/9d098bc1-d305-475b-bb5f-ecd3ddf62cc6.jpg",
+    ],
+  },
+  {
+    dog: DogName.epagneulBreton,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0151_brittany.jpg?itok=MZUdZNmM",
+      "https://www.beestig.be/sites/default/files/styles/article_header/public/artikel/teaser_achtergrond/epagneul_breton_hond.jpg?itok=5NbbIrJA",
+      "https://dejacht.nl/flora-en-fauna/jachthondenrassen/staande-honden/continentaal-1/epagneul-breton/epagneul-breton-wmc-10.jpg/",
+    ],
+  },
+  {
+    dog: DogName.shetlandSheepdog,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0116_shetland_sheepdog.jpg",
+      "https://www.akc.org/wp-content/uploads/2017/11/Shetland-Sheepdog-On-White-01.jpg",
+      "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/animal/breed/dog/adult/5cb5a163d90be203279750.jpg",
+    ],
+  },
+  {
+    dog: DogName.finseSpits,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0049_finnish_spitz.jpg",
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Finnish%20Spitz2.jpg?itok=nk-7lMzr",
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Finnish%20Spitz1.jpg?itok=RzliHFEm",
+    ],
+  },
+  {
+    dog: DogName.bolognezer,
+    imgs: [
+      "https://www.hondenrassen.nl/public/img/content/bolognezer.jpg",
+      "https://www.purina.nl/sites/default/files/breed_library/bolognese.jpg",
+      "https://egcn.nl/images/bolognezer/1/bolognezer.jpg",
+    ],
+  },
+  {
+    dog: DogName.russischeTerrier,
+    imgs: [
+      "https://www.houdenvanhonden.nl/globalassets/rassen/fci-2/zwarte-russische-terrier/brt-ou-0006.jpg",
+      "https://assets.bazoeki.com/eyJidWNrZXQiOiJhc3NldHMuYmF6b2VraS5jb20iLCJrZXkiOiJhc3NldHMvaW1nL2hlYWRlci1kb2ctaW1hZ2VzL1pSVC1yYXNkZXRhaWwucG5nIiwiZWRpdHMiOnsicG5nIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlfSwicmVzaXplIjp7IndpZHRoIjo1NDAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ==",
+      "https://www.omlet.nl/images/cache/512/422/Dog-Black_Russian_Terrier-Two_beautiful_adult_Black_Russian_Terriers_content_in_each_others_company.jpg",
+    ],
+  },
+  {
+    dog: DogName.bouvierDesArdenne,
+    imgs: [
+      "https://jardinage.lemonde.fr/images/dossiers/2019-12/bouvier-des-ardennes-1-073856.jpg",
+      "https://cdn.royalcanin-weshare-online.io/8mlWHWsBG95Xk-RBXfiT/v1/bd38h-hub-bouvier-des-ardennes-black-and-white?fm=jpg&auto=compress",
+      "https://media.ooreka.fr/public/image/3-306021-2563-full-13058055.jpg",
+    ],
+  },
+  {
+    dog: DogName.epagneulNainContinentalPapillon,
+    imgs: [
+      "https://egcn.nl/images/Epapillon/1/Epagneul-Nain-Continental-Papillon.jpg",
+      "https://www.houdenvanhonden.nl/globalassets/rassen/fci-9/epagneul-nain-continental-papillon/pap-ou-0039.jpg",
+      "https://img.passeportsante.net/1200x675/2022-08-17/epagneul-papillon.webp",
+    ],
+  },
+  {
+    dog: DogName.ruwharigeTeckel,
+    imgs: [
+      "https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0129_dachshund_wire_standard.jpg?itok=x0VONqvK",
+      "https://st2.depositphotos.com/1806346/11156/i/600/depositphotos_111561602-stock-photo-miniature-wirehaired-dachshund.jpg",
+      "http://teckelpedia.nl/wp-content/uploads/2021/03/43212686-rasechte-ruwharige-teckel-binnen-in-de-studio-en-geA%C2%AFsoleerd-op-een-zwarte-achtergrond-.jpg",
+    ],
+  },
+  {
+    dog: DogName.imaalTerrierOfIerseGlen,
+    imgs: [
+      "https://brit-petfood.com/file/nodes/product/irishglenofimaalterier.jpg",
+      "https://www.akc.org/wp-content/uploads/2017/11/Glen-of-Imaal-Terrier-On-White-01.jpg",
+      "https://animals.net/wp-content/uploads/2018/10/Glen-of-Imaal-Terrier-2-650x425.jpg",
     ],
   },
 ];
